@@ -48,10 +48,10 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-   var message = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
   if (cardNumber === undefined) {
     return("Sorry, we don't have a credit card on file for you.");
   } else { 
+    
    cart = []; 
     return(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`);
   }
